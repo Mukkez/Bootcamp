@@ -1,0 +1,83 @@
+/* @font-face {
+	font-family: 'Latio';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Lato/Lato-Regular.ttf);
+} */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+}
+body {
+	text-align: center;
+}
+header {
+	background: rgb(113, 252, 250);
+	padding: 4.42rem;
+	margin-bottom: 0.8rem;
+}
+main {
+	display: flex;
+}
+section {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8rem;
+	width: 100%;
+}
+article {
+	padding: 4.42rem;
+	width: 33.3333333%;
+	flex-grow: 1;
+}
+article:nth-of-type(1) {
+	background: rgb(136, 250, 172);
+}
+article:nth-of-type(2) {
+	background: rgb(245, 178, 108);
+}
+article:nth-of-type(3) {
+	background: rgb(232, 100, 177);
+}
+article:nth-of-type(4) {
+	background: rgb(202, 249, 108);
+}
+aside {
+	background: rgb(135, 129, 247);
+	width: 20%;
+	height: 20.8rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0.8rem;
+}
+footer {
+	background: rgb(115, 144, 216);
+	padding: 4.42rem;
+	margin-top: 1rem;
+}
+@media (max-width: 1082px) {
+	article {
+		width: 31%;
+	}
+}
+@media (max-width: 1024px) {
+	main {
+		flex-direction: column-reverse;
+	}
+	article {
+		width: 25%;
+	}
+	aside {
+		width: 100%;
+		height: 10rem;
+		margin-left: 0;
+		margin-bottom: 0.8rem;
+	}
+}
+@media (max-width: 576px) {
+	article {
+		width: 100%;
+	}
+}

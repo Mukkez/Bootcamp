@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+div {
+	margin-top: 50px;
+	height: 300px;
+	width: 300px;
+	background-color: rgb(216, 72, 82);
+	border-radius: 20px;
+	transition: 2s;
+	transform-origin: bottom left;
+}
+div:hover {
+	transform: translate(50px) rotate(90deg) scale(1.5);
+}

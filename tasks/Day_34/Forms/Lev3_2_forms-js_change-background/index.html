@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>lev3_2: forms-js_change-background </title>
+	</head>
+	<body>
+		<form action="" onsubmit="return false">
+			<section>
+				<label for="rot">RED</label>
+				<input type="range" id="red" name="red" min="0" max="255" step="5" oninput="changeBackground()" />
+				<label for="gruen">GREEN</label>
+				<input type="range" id="green" name="green" min="0" max="255" step="5" oninput="changeBackground()" />
+				<label for="blau">BLUE</label>
+				<input type="range" id="blue" name="blue" min="0" max="255" step="5" oninput="changeBackground()" />
+			</section>
+		</form>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

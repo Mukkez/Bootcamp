@@ -1,0 +1,44 @@
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+	font-family: 'Raleway';
+}
+body {
+	background-color: aquamarine;
+}
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 50px;
+	box-shadow: 0 1px 8px #ddd;
+	background-color: #fff;
+	margin: 0.9375rem 0 0 0;
+}
+header li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 20px;
+}
+header a {
+	text-decoration: none;
+	color: #333;
+}
+header a:hover {
+	color: #337ab7;
+}
+.logo {
+	margin-right: 30%;
+	font-size: 1.5em;
+	color: #666;
+}
+.logo:hover {
+	color: #333;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Scorekeeper</title>
+	</head>
+	<body>
+		<fieldset class="broderHome">
+			<legend>Heim</legend>
+			<div class="home"><p id="homeResult">0</p></div>
+			<div class="btn">
+				<p id="teamHome" class="team">-</p>
+				<h5>Punkte manuell dazu addieren</h5>
+				<button class="btnHome" onclick="onePlusHome()"><p>+1</p></button>
+				<button class="btnHome" onclick="towPlusHome()"><p>+2</p></button>
+				<button class="btnHome" onclick="threePlusHome()"><p>+3</p></button>
+			</div>
+		</fieldset>
+		<!-- ================= Zusatz Button mit Spiel ================= -->
+		<fieldset class="broderResult">
+			<legend>Spiel Ergebnis</legend>
+			<div class="result"><p class="resultOld" id="resultBox">Aktuell kein Spiel gestartet!</p></div>
+			<div class="btnClass">
+				<button class="btnResult" id="modal" onclick="team()"><p>Team´s eingeben</p></button>
+				<button class="btnResult" onclick="spiel()"><p>Spiel beginnen</p></button>
+				<button class="btnResult" onclick="reset()"><p>Reset</p></button>
+			</div>
+		</fieldset>
+		<!-- ================= Zusatz Button mit Spiel ================= -->
+		<fieldset class="broderAway">
+			<legend>Away</legend>
+			<div class="away"><p id="awayResult">0</p></div>
+			<div class="btn">
+				<p id="teamAway" class="team">-</p>
+				<h5>Punkte manuell dazu addieren</h5>
+				<button class="btnAway" onclick="onePlusAway()"><p>+1</p></button>
+				<button class="btnAway" onclick="towPlusAway()"><p>+2</p></button>
+				<button class="btnAway" onclick="threePlusAway()"><p>+3</p></button>
+			</div>
+		</fieldset>
+		<!-- ================= Team Dialog ================= -->
+		<div id="dialog" class="modal">
+			<div class="modal-content">
+				<form onsubmit="event.preventDefault()">
+					<label class="labelHome" for="name1">Team Home</label>
+					<input class="inputHome" type="text" id="diaHome" name="Home" />
+					<label class="labelAway" for="name2">Team Away</label>
+					<input class="inputAway" type="text" id="diaAway" name="Away" />
+					<button class="submit" type="submit" id="add-home" onclick="savePlayersNames1()">Speichern</button>
+				</form>
+			</div>
+		</div>
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/confetti.js"></script>
+	</body>
+</html>

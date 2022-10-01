@@ -1,0 +1,260 @@
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato'), local('Lato-Regular'), url(../font/Lato/Lato-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Orbitron'), local('Orbitron-Regular'), url(../font/Orbitron/Orbitron-Regular.ttf) format('truetype');
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+}
+body {
+	background-color: #2c2c2c;
+	text-align: center;
+}
+fieldset {
+	width: 389px;
+	height: 389px;
+	position: relative;
+	top: 30px;
+	box-sizing: border-box;
+	border-radius: 40px;
+	display: inline-block;
+}
+.broderHome {
+	border: 5px solid #97f5bb;
+}
+.broderAway {
+	border: 5px solid #525df4;
+	margin: 0 0 0 4.375rem;
+}
+legend {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 0 5px;
+	background: #2c2c2c;
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 37px;
+	line-height: 46px;
+	color: #fff;
+}
+.home,
+.away,
+.result {
+	width: 315px;
+	height: 315px;
+	background: #000000;
+	border-radius: 30px;
+	margin: 2.3125rem auto;
+}
+.home p,
+.away p {
+	font-family: 'Orbitron', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 150px;
+	line-height: 188px;
+	color: #fdf860;
+	padding: 4.0625rem 0 0 0;
+}
+.btn {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 37px;
+	line-height: 44px;
+	text-align: center;
+	color: #ffffff;
+	margin: 3.5rem 0 0 0;
+}
+.btnHome {
+	background: #97f5bb;
+	border-radius: 20px;
+	width: 105px;
+	height: 105px;
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+.btnHome p,
+.btnAway p {
+	margin: 1.9375rem;
+}
+.btnAway {
+	background: #525df4;
+	border-radius: 20px;
+	width: 105px;
+	height: 105px;
+	display: inline-block;
+	margin: 0 0 0 15px;
+}
+h5 {
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+/* ================= Zusatz Button und Spiel ================= */
+fieldset:nth-of-type(2) {
+	width: 389px;
+	height: 389px;
+	position: relative;
+	top: 40px;
+	box-sizing: border-box;
+	border-radius: 40px;
+	display: inline-block;
+}
+fieldset:nth-of-type(2) legend {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%, 50%);
+	padding: 0 5px;
+	background: #2c2c2c;
+	font-family: 'Orbitron';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 37px;
+	line-height: 46px;
+	color: #fff;
+	width: 300px;
+}
+button {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	color: #ffffff;
+	margin: 4.5rem 0 0 0;
+}
+.btnClass {
+	margin: 4.5rem 0 0 0;
+}
+.btnResult {
+	background: linear-gradient(45deg, #97f5bb 10%, #525df4 90%) padding-box, linear-gradient(45deg, #97f5bb 10%, #525df4 90%) border-box;
+	border: 1px solid transparent;
+	border-radius: 20px;
+	width: 340px;
+	height: 55px;
+	margin: 0.5rem auto;
+}
+.btnResult:hover {
+	box-shadow: 0px 0px 10px 10px rgb(255 255 255 / 30%);
+}
+.broderResult {
+	background: linear-gradient(#2c2c2c, #2c2c2c) padding-box, linear-gradient(90deg, #97f5bb 50%, #525df4 50%) border-box;
+	border: 5px solid transparent;
+	margin: 0 0 0 4.375rem;
+}
+.result {
+	font-family: 'Orbitron', sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 25px;
+	line-height: 40px;
+	color: #fdf860;
+}
+
+.resultOld {
+	padding: 65px 0 0 0;
+	font-size: 40px;
+	line-height: 55px;
+}
+.resultTimer {
+	padding: 95px 0 0 0;
+	font-size: 22px;
+}
+.resultNew {
+	padding: 30px 0 0 0;
+	font-size: 20px;
+}
+.ende {
+	text-decoration: underline;
+	font-size: 30px;
+	color: #fff;
+}
+span {
+	text-decoration: underline;
+	font-size: 35px;
+	color: red;
+}
+
+/* ================= Dialog abfrage mit den Teams ================= */
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2;
+	padding-top: 10px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0, 0, 0);
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	background: url(../img/bs_back.png) no-repeat;
+	background-size: 650px;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	border-radius: 1.5rem;
+	width: 610px;
+	height: 610px;
+}
+.labelHome {
+	color: #fff;
+	display: block;
+	font-size: 23px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: left;
+	margin: 5px 0px 0 10px;
+}
+.inputHome {
+	width: 280px;
+	margin: 10px 315px 0 0;
+	height: 20px;
+}
+.labelAway {
+	color: #fff;
+	display: block;
+	font-size: 23px;
+	font-family: 'Orbitron', sans-serif;
+	text-align: left;
+	margin: 465px 0 0 160px;
+}
+.inputAway {
+	width: 280px;
+	margin: 10px 30px 0 10px;
+	height: 20px;
+}
+button {
+	background: linear-gradient(45deg, #97f5bb 10%, #525df4 90%) padding-box, linear-gradient(45deg, #97f5bb 10%, #525df4 90%) border-box;
+	border: 1px solid transparent;
+	padding: 3px;
+	border-radius: 20px;
+	height: 40px;
+	width: 140px;
+	margin: -45px 0 0px 480px;
+	display: block;
+}
+.team {
+	margin-top: 20px;
+	color: red;
+}
+.submit {
+	font-size: 20px;
+}

@@ -1,0 +1,83 @@
+@font-face {
+	font-family: 'Latio';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Lato/Lato-Regular.ttf);
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+	font-family: 'Latio';
+}
+body {
+	background-color: #d9e8e5;
+}
+.diamond {
+	transform: rotate(-0.14turn);
+	height: 1.5rem;
+	margin: 0 0.5rem -0.25rem 0;
+}
+.logo {
+	font-size: 1.2rem;
+	color: #666;
+}
+.logo:hover {
+	color: #333;
+}
+header {
+	padding: 0.625rem 0.3125rem;
+	box-shadow: 0 0.0625rem 0.5rem #ddd;
+	background-color: #fff;
+}
+header ul {
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+header a {
+	text-decoration: none;
+	color: #333;
+	padding: 0.5rem 0.6rem;
+	display: block;
+}
+header a:hover {
+	color: #337ab7;
+}
+.first {
+	margin-left: 45px;
+}
+.push {
+	margin-left: auto;
+}
+main {
+	color: rgba(0, 0, 0, 0.8);
+}
+h2 {
+	margin: -18.4375rem -4.1875rem 0 0.5rem;
+}
+.imgArea {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 4.3rem 6.25rem;
+}
+.imgBox {
+	padding: 0 0.3125rem 0.3125rem;
+	position: relative;
+}
+.text {
+	position: absolute;
+	color: #000;
+	bottom: 0.9375rem;
+	right: 0.75rem;
+}
+.imgBox img {
+	width: 19.375rem;
+}
+img:hover {
+	opacity: 0.5;
+	transition: 0.9s;
+}

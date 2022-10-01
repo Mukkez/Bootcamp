@@ -1,0 +1,27 @@
+h1,
+section {
+	text-align: center;
+}
+div {
+	height: 100px;
+	width: 100px;
+	margin: 15px;
+	display: inline-block;
+	border-radius: 100%;
+	border: 1px solid black;
+}
+div:hover {
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+#div1 {
+	background: linear-gradient(45deg, rgb(28, 127, 66) 50%, rgb(89, 0, 78) 50%);
+}
+#div2 {
+	background: linear-gradient(45deg, rgb(53, 49, 93) 50%, rgb(207, 156, 51) 50%);
+}
+#div3 {
+	background: linear-gradient(45deg, rgb(2, 0, 23) 50%, rgb(156, 73, 12) 50%);
+}
+#div4 {
+	background: linear-gradient(45deg, rgb(7, 0, 59) 50%, rgb(40, 192, 254) 50%);
+}

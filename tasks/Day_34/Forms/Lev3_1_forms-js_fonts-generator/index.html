@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>lev3_1: forms-js_fonts-generator</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<form action="" onsubmit="return false">
+				<h4>Lev3_1_forms-js_fonts-generator</h4>
+				<h2>Fonts Generator</h2>
+				<section>
+					<input type="range" id="fontSize" name="fontSize" min="0" max="150" onchange="changeFontSize()" />
+
+					<label for="volume">Font-size</label>
+
+					<select name="mood" id="mood" onchange="changeMood()">
+						<option value="'Bodoni Moda', serif">Bodoni Moda, serif</option>
+						<option value="'Open Sans', sans-serif">Open Sans, sans-serif</option>
+						<option value="'Roboto', sans-serif">Roboto, sans-serif</option>
+						<option value="'Yusei Magic', sans-serif">Yusei Magic, sans-serif</option>
+					</select>
+					<input type="text" id="textField" onchange="getTextValue()" />
+				</section>
+				<h1 id="result"></h1>
+			</form>
+		</div>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+	background-color: gray;
+}
+
+.example {
+	position: relative;
+	margin: 2rem auto;
+	height: 400px;
+	width: 400px;
+	overflow: hidden;
+}
+.content {
+	top: 100%;
+	opacity: 0;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	transition: 0.5s ease-in;
+	font-size: 32px;
+}
+.example:hover .content {
+	opacity: 1;
+	top: 0%;
+}

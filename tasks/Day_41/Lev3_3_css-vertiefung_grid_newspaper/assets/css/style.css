@@ -1,0 +1,170 @@
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+/* =================================================================== */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+}
+
+body {
+	background: linear-gradient(
+		to bottom,
+		hsl(330, 100%, 45.1%) 0%,
+		hsl(331, 89.25%, 47.36%) 8.1%,
+		hsl(330.53, 79.69%, 48.96%) 15.5%,
+		hsl(328.56, 70.89%, 49.96%) 22.5%,
+		hsl(324.94, 63.52%, 50.4%) 29%,
+		hsl(319.21, 54.99%, 50.3%) 35.3%,
+		hsl(310.39, 46.14%, 49.68%) 41.2%,
+		hsl(296.53, 39.12%, 49.7%) 47.1%,
+		hsl(280.63, 42.91%, 53.43%) 52.9%,
+		hsl(265.14, 47.59%, 56.84%) 58.8%,
+		hsl(250.13, 52.52%, 59.88%) 64.7%,
+		hsl(235.88, 59.2%, 60.91%) 71%,
+		hsl(225.81, 68.23%, 57.85%) 77.5%,
+		hsl(218.93, 74.97%, 54.21%) 84.5%,
+		hsl(213.89, 79.63%, 49.97%) 91.9%,
+		hsl(210, 100%, 45.1%) 100%
+	);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#designTitel {
+	margin: 2vw 0 0 3.5vw;
+	font-style: bold;
+	font-family: 'Roboto';
+}
+#designTitel p:nth-of-type(1) {
+	color: rgb(255 255 0 / 83%);
+	font-size: 1.8rem;
+}
+#designTitel p:nth-of-type(2) {
+	color: white;
+	font-size: 1.3rem;
+}
+#designSection {
+	width: 90%;
+	height: 100%;
+	background-color: rgb(228, 228, 217);
+	margin: 2% auto;
+	border-radius: 10px;
+	padding: 25px;
+}
+@media (min-width: 1441px) {
+	#designTitel {
+		margin: 2vw 0 0 4.5vw;
+	}
+}
+/* =================================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+header,
+main {
+	font-family: 'Cormorant Garamond', serif;
+	margin: 1% auto;
+}
+
+header h1 {
+	text-align: center;
+	margin: 2% 0;
+}
+
+header article {
+	display: flex;
+	justify-content: space-around;
+	border-top: 3.2px solid #000;
+	border-bottom: 3.2px solid #000;
+	padding: 0.3% 0;
+}
+
+main {
+	display: grid;
+	justify-content: space-around;
+	grid-template-columns: repeat(5, 18%);
+	gap: 2%;
+}
+
+figure img {
+	width: 100%;
+	height: 100%;
+}
+
+figcaption {
+	font-style: italic;
+	font-size: 0.8rem;
+}
+
+h1.headline {
+	grid-column: 1 / span 4;
+	text-align: center;
+}
+
+.sponsor {
+	grid-column: 5 / 6;
+	text-align: center;
+}
+
+.col1,
+.col2 {
+	display: grid;
+	grid-template-rows: 17% auto 50%;
+}
+
+.col3 {
+	grid-column: 3 / span 2;
+	display: grid;
+	grid-template-rows: 97% auto;
+	gap: 1%;
+}
+
+.col4 {
+	width: 100%;
+	grid-column: 5 / span 1;
+	display: grid;
+	height: 100%;
+	grid-template-rows: 33% 33% 33%;
+	align-content: center;
+	gap: 2%;
+}
+
+.box {
+	border: 5px double #000;
+	text-align: center;
+	padding: 10%;
+}
+
+.box h3 {
+	font-size: 1.5rem;
+	padding: 1%;
+}
+
+.box p {
+	padding: 2%;
+}
+
+.best a {
+	font-size: 1.2em;
+	text-decoration: underline;
+	color: rgb(233, 233, 224);
+	background-color: rgb(228, 228, 217);
+	padding: 2%;
+}
+
+.best a:hover {
+	color: rgb(99, 99, 80);
+	background: #fff;
+}
+
+.box img {
+	width: 100%;
+	height: 100%;
+}
+
+.box h1 {
+	font-size: 3rem;
+}

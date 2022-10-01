@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/main.js" defer></script>
+		<title>Lev2_2_js-vertiefung_DOM_form_value</title>
+	</head>
+	<body>
+		<section id="designTitel">
+			<p>JS Vertiefung</p>
+			<p>CodeFlow Übung lev2_2: DOM Elements</p>
+		</section>
+		<section id="designSection" class="section">
+			<div>
+			<div>
+					<form id="form1" onSubmit="return false">
+							<label for="vorname">Vorname</label>
+							<input type="text" id="vorname" name="vorname" placeholder="Dein Name...">
+
+							<label for="nachname">Nachname</label>
+							<input type="text" id="nachname" name="nachname" placeholder="Dein Nachname...">
+							<label for="land">Land</label>
+							<select id="land" name="land">
+									<option value="Australia">Australia</option>
+									<option value="Canada">Canada</option>
+									<option value="Usa">USA</option>
+							</select>
+							<input type="submit" value="Submit" onclick="submitData()">
+					</form>
+				</div>
+			<div>
+		</section>
+	</body>
+</html>

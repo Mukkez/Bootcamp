@@ -1,0 +1,341 @@
+/*=================================== Fonts ===================================*/
+
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 900;
+	src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+/*=================================== General Styles ===================================*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+h2 {
+	font-size: 3.5rem;
+}
+
+/*=================================== Header/Hero ===================================*/
+
+header {
+	background: url('../img/ilustracion1.png') top right/contain no-repeat;
+	background-size: 55% 67.65%;
+	padding-top: 5vh;
+	position: relative;
+}
+
+header > img {
+	position: absolute;
+	height: 70%;
+	left: 50vw;
+	top: 1vh;
+	animation: upAndDown 2s linear alternate infinite;
+}
+
+@keyframes upAndDown {
+	0% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(20px);
+	}
+}
+
+header > div {
+	display: flex;
+}
+
+header > div > img {
+	height: 45px;
+	width: 45px;
+	margin: 0 2vw 0 2vw;
+	position: fixed;
+}
+
+header > div > ul {
+	list-style: none;
+	padding-left: 6vw;
+}
+
+header > div > ul > li > h2 {
+	font-size: 1.5em;
+}
+
+header > h1 {
+	font-size: 4.5rem;
+	word-break: break-word;
+	padding: 30vh 0 0 8vw;
+	width: 55vw;
+}
+
+header > p {
+	padding: 3vh 0 0 8vw;
+	word-break: break-word;
+	width: 55vw;
+	font-size: 1.5rem;
+}
+
+header > p > img {
+	height: 30px;
+	width: 30px;
+}
+
+header > span {
+	display: block;
+	padding: 15vh 0 15vh 8vw;
+	color: #ff3571;
+	font-weight: bold;
+}
+
+/*=================================== Main ===================================*/
+
+/*===================================  Section 1 - Gallery =================================== */
+
+section:nth-of-type(1) > img {
+	width: 100%;
+}
+
+/*===================================  Section 2 - Every Idea =================================== */
+
+section:nth-of-type(2) {
+	padding: 55vh 0 25vh 10vw;
+	display: flex;
+}
+
+section:nth-of-type(2) > h2 {
+	width: 25vw;
+}
+
+section:nth-of-type(2) > h2 > img {
+	width: 45px;
+}
+
+section:nth-of-type(2) > p {
+	width: 47vw;
+	margin: 35px 0 0 8vw;
+	line-height: 35px;
+	font-size: 20px;
+}
+
+/*===================================  Section 3 - After several weeks =================================== */
+
+section:nth-of-type(3) > article {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 70px 0 150px 0;
+}
+
+section:nth-of-type(3) > h2 {
+	margin-left: 10vw;
+	width: 50vw;
+	padding-bottom: 10vh;
+}
+
+section:nth-of-type(3) > article > div {
+	display: flex;
+	align-items: flex-start;
+	padding-top: 2vh;
+	margin-top: 70px;
+}
+
+section:nth-of-type(3) > article > div > img {
+	width: 2em;
+	margin: 0 2vw 0 10vw;
+}
+
+section:nth-of-type(3) > article > div > ul {
+	list-style: none;
+	width: 35vw;
+	line-height: 2;
+}
+
+section:nth-of-type(3) > article > div > ul > li {
+	width: 25vw;
+}
+
+/*===================================  Section 4 - Are you ready? =================================== */
+
+section:nth-of-type(4) > h2 {
+	text-align: center;
+	padding: 10vh 0 7vh 0;
+}
+
+section:nth-of-type(4) > p {
+	padding-bottom: 22vh;
+	font-size: 1.5rem;
+	width: 820px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+section:nth-of-type(4) > div > h2 {
+	color: #dddddd;
+	padding: 2vh 0 6vh 0;
+	font-size: 4.5rem;
+}
+
+section:nth-of-type(4) > div > h4 {
+	padding: 3vh 0;
+}
+
+section:nth-of-type(4) > div > p {
+	padding: 1vh 0 15vh 0;
+	line-height: 35px;
+	width: 37.5vw;
+}
+
+section:nth-of-type(4) > div:nth-of-type(1) {
+	background: url('../img/step01.png') left/contain no-repeat;
+	padding-left: 45%;
+	width: 80%;
+	margin: 0 auto;
+}
+
+section:nth-of-type(4) > div:nth-of-type(2) {
+	background: url('../img/step02.png') right/contain no-repeat;
+	margin-bottom: 10vh;
+	width: 80%;
+	margin: 150px auto;
+}
+
+section:nth-of-type(4) > div:nth-of-type(3) {
+	background: url('../img/step03.png') left/contain no-repeat;
+	margin-bottom: 10vh;
+	padding-left: 45%;
+	width: 80%;
+	margin: 150px auto;
+}
+
+section:nth-of-type(4) > div:nth-of-type(4) {
+	background: url('../img/step04.png') right/contain no-repeat;
+	margin-bottom: 10vh;
+	width: 80%;
+	margin: 150px auto;
+}
+
+/*===================================   Footer ===================================*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 20%;
+	width: 60%;
+	margin: 2vh 0 14vh 0;
+}
+
+footer > div > h2 {
+	padding-bottom: 5vh;
+}
+
+footer > div > p {
+	font-size: 1.5rem;
+	padding-bottom: 5vh;
+}
+
+footer > div > a {
+	background: #3c30ff;
+	text-transform: uppercase;
+	width: 25vw;
+	align-self: center;
+	margin: 3vh 0 1vh 0;
+	padding: 10px;
+	border: none;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer > form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 15vh;
+	height: 20%;
+	width: 60%;
+}
+
+footer > form > h2 {
+	padding-bottom: 5vh;
+}
+
+footer > form > p {
+	font-size: 1.5rem;
+	padding-bottom: 10vh;
+}
+
+footer > form > input {
+	padding: 5vh 0;
+	width: 45vw;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0px 0px 30px 5px #dddddd;
+	font-size: 1.5rem;
+}
+
+footer > form > .button {
+	width: 15vw;
+	align-self: center;
+	margin: 5vh 0 1vh 0;
+	padding: 20px;
+	border: none;
+	color: white;
+	background: #ff3571;
+	border-radius: 5px;
+	font-size: 1.2rem;
+}
+
+footer > form > .button:hover {
+	background: linear-gradient(to right, #ff3571, #3c30ff);
+}
+
+footer > p {
+	align-self: flex-start;
+	margin: 0 0 2vh 2vw;
+}
+
+footer > p > img {
+	width: 25px;
+}
+/*=================================== Footer Confirmation Page ===================================*/
+.invisible {
+	display: none;
+}
+.confirmation {
+	width: 80%;
+	box-shadow: 0px 0px 30px 5px #dddddd;
+	padding: 50px;
+}
+.confirmation h2 {
+	text-transform: uppercase;
+	margin: 0 auto;
+	width: 55%;
+	text-align: center;
+	line-height: 2;
+	font-size: 2rem;
+}
+.confirmation p {
+	font-size: 1rem;
+}

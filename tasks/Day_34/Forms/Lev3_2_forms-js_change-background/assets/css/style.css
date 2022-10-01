@@ -1,0 +1,14 @@
+body {
+	text-align: center;
+	background-color: aqua;
+	margin-top: 50px;
+}
+#red {
+	accent-color: red;
+}
+#green {
+	accent-color: green;
+}
+#blue {
+	accent-color: blue;
+}

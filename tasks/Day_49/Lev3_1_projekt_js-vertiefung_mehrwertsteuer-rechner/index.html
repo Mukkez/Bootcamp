@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/main.js" defer></script>
+		<title>Lev3_1_projekt_js-vertiefung_mehrwertsteuer-rechner </title>
+	</head>
+	<body>
+		<section id="designTitel">
+			<p>Js Vertiefung - Projekt</p>
+			<p>Projekt lev3_1: Mehrwertsteuer-Rechner</p>
+		</section>
+		<section id="designSection" class="section">
+			<div class="container">
+				<h2 class="padding">Mehrwertsteuer-Rechner</h2>
+
+				<div class="partOne">
+					<p>Was soll berechnet werden?</p>
+					<p>
+						<input type="radio" name="type" id="nettoToBrutto" checked onclick="calculationTypeCheck(); ; berechnen()" />
+						&nbsp;Mehrwertsteuer aufschlagen (Netto zu Brutto)
+					</p>
+					<p><input type="radio" name="type" onclick="calculationTypeCheck(); ; berechnen()" /> &nbsp;Mehrwertsteuer abziehen (Brutto zu Netto)</p>
+				</div>
+
+				<div class="partTwo">
+					<p>Mehrwertsteuersatz</p>
+					<p>
+						<input type="radio" name="tax" id="taxRateValue19" checked onclick="calculationTypeCheck(); berechnen()" />&nbsp;
+						<span id="taxRateValue1">19 %</span>
+						&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="tax" id="taxRateValue07" onclick="calculationTypeCheck(); berechnen()" />&nbsp;
+						<span id="taxRateValue2">7 %</span>
+					</p>
+				</div>
+
+				<div class="partThree">
+					<p id="calculationType"><span class="required">*</span></p>
+					<div class="box">
+						<input type="number" name="betrag" id="betragValue" value="0.00" />&nbsp;
+						<span id="currencySign"></span>
+						<input type="button" value="BERECHNEN" onclick="berechnen()" />
+					</div>
+				</div>
+
+				<div class="partFour">
+					<h2>Ergebnis</h2>
+					<div>
+						<p class="result">Mehrwertsteuerbetrag:</p>
+						<p class="result" id="taxValue"></p>
+					</div>
+
+					<div>
+						<p class="result" id="finalText">xxx</p>
+						<p class="result" id="resultValue"></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
