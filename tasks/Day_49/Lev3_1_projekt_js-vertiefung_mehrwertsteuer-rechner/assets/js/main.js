@@ -44,7 +44,7 @@ function berechnen() {
 	let taxRate = valueTax;
 
 	let betrag = Number(betragValue.value);
-	console.log(task);
+
 	// *================= Ist der erste Radiobutton true dann wird die MwSt. dazugerechnet =================
 	if (task == true) {
 		taxes = Math.round(betrag * taxRate) / 100;
