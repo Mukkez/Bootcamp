@@ -35,7 +35,7 @@ function calculationTypeCheck() {
 	valueTax = document.getElementById('taxRateValue19').checked ? taxRate1 : taxRate2;
 
 	// *================= Wenn task true gib 'Bruttobetrag' aus, wenn false dann 'Nettobetrag' =================
-	document.getElementById('finalText').innerHTML = task ? 'Bruttobetrag:' : 'Nettobetrag:';
+	document.getElementById('resultText').innerHTML = task ? 'Bruttobetrag:' : 'Nettobetrag:';
 }
 
 function berechnen() {
