@@ -1,0 +1,11 @@
+/* @font-face {
+	font-family: 'Latio';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/Lato/Lato-Regular.ttf);
+} */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: broder-box;
+}
