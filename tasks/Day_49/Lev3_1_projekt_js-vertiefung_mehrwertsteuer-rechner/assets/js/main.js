@@ -9,6 +9,8 @@ let currency = document.getElementById('currencySign');
 let betragValue = document.getElementById('betragValue');
 let taxValue = document.getElementById('taxValue');
 let resultValue = document.getElementById('resultValue');
+let calculationType = document.getElementById('calculationType');
+let resultText = document.getElementById('resultText');
 
 // *================= Start angaben festlegen =================
 start();
@@ -29,13 +31,13 @@ function calculationTypeCheck() {
 	task = document.getElementById('nettoToBrutto').checked;
 
 	// *================= Wenn task true gib 'Netto..' aus, wenn false dann 'Brutto...' =================
-	document.getElementById('calculationType').innerHTML = task ? `Nettobetrag (Preis ohne MwSt.) in €` : `Bruttobetrag (Preis inkl. MwSt.) in €`;
+	calculationType.innerHTML = task ? `Nettobetrag (Preis ohne MwSt.) in €` : `Bruttobetrag (Preis inkl. MwSt.) in €`;
 
 	// *================= Wenn task true gib 'taxRate1' aus, wenn false dann 'taxRate1' =================
-	valueTax = document.getElementById('taxRateValue19').checked ? taxRate1 : taxRate2;
+	valueTax = mwstValue19.checked ? taxRate1 : taxRate2;
 
 	// *================= Wenn task true gib 'Bruttobetrag' aus, wenn false dann 'Nettobetrag' =================
-	document.getElementById('resultText').innerHTML = task ? 'Bruttobetrag:' : 'Nettobetrag:';
+	resultText.innerHTML = task ? 'Bruttobetrag:' : 'Nettobetrag:';
 }
 
 function berechnen() {
