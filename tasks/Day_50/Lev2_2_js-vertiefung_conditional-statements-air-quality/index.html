@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/main.js" defer></script>
+		<title>Lev2_2_js-vertiefung_conditional-statements-air-quality </title>
+	</head>
+	<body>
+		<section id="designTitel">
+			<p>Js Vertiefung</p>
+			<p>CodeFlow Übung lev2_2: conditional-statements-air-quality</p>
+		</section>
+		<section id="designSection" class="section">
+			<div>
+				<p>AQI: <span id="aqi">&nbsp;</span></p>
+				<input type="range" name="aqi" id="aqiRange" min="0" max="150" value="0" onchange="checkAirQuality()" />
+				<h1>Level of health concern: <span id="healthConcern">&nbsp;</span></h1>
+				<h1>Level of health effect: <span id="healthEffect">&nbsp;</span></h1>
+			</div>
+		</section>
+	</body>
+</html>
