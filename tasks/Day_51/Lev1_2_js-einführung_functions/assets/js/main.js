@@ -5,7 +5,7 @@ function text() {
 }
 text();
 
-/* Funktion mit Summe von x=2 und y=3 */
+/* Funktion mit Summe von x=5 und y=3 */
 function sum(x, y) {
 	console.log(x + y);
 }
@@ -56,7 +56,7 @@ console.log('%c----- arrow function -----', 'color: white; background-color: dar
 let sayHello = () => console.log('Hallo');
 sayHello();
 
-/* Funktion mit Summe von x=2 und y=3 */
+/* Funktion mit Summe von x=5 und y=3 */
 let summe = (x, y) => console.log(x + y);
 summe(5, 3);
 
