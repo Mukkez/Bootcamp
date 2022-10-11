@@ -1,19 +1,10 @@
-let numberOne = document.getElementById('numberOne');
-let numberTwo = document.getElementById('numberTwo');
-let resultUser = document.getElementById('resultUser');
-let remark = document.getElementById('remark');
+let numberOne = document.getElementById('numberOne'),
+	numberTwo = document.getElementById('numberTwo'),
+	resultUser = document.getElementById('resultUser'),
+	remark = document.getElementById('remark');
 
-const minMax = {
-	min: 1,
-	max: 100,
-};
-
-function getRandomNumbers(min, max) {
-	return Math.floor(Math.random() * max + min);
-}
-
-numberOne.innerHTML = getRandomNumbers(minMax.min, minMax.max);
-numberTwo.innerHTML = getRandomNumbers(minMax.min, minMax.max);
+numberOne.innerHTML = Math.floor(Math.random() * 100 + 1);
+numberTwo.innerHTML = Math.floor(Math.random() * 100 + 1);
 
 resultUser.addEventListener('keydown', (event) => {
 	if (event.key === 'Enter') {
@@ -22,19 +13,16 @@ resultUser.addEventListener('keydown', (event) => {
 });
 
 resultSubmit.addEventListener('click', () => {
-	let summe = Number(numberOne.innerHTML) + Number(numberTwo.innerHTML);
-	userSumme = Number(resultUser.value);
-
-	if (summe === userSumme) {
+	if (Number(numberOne.innerHTML) + Number(numberTwo.innerHTML) === Number(resultUser.value)) {
 		remark.style.color = 'green';
 		remark.innerHTML = `Das Ergebnis stimmt!`;
 	} else {
 		remark.style.color = 'red';
-		remark.innerHTML = `Das Ergebnis ist falsch!`;
+		remark.innerHTML = `Das Ergebnis ist leider falsch!`;
 	}
 });
 
 newTask.addEventListener('click', () => {
-	numberOne.innerHTML = getRandomNumbers(minMax.min, minMax.max);
-	numberTwo.innerHTML = getRandomNumbers(minMax.min, minMax.max);
+	numberOne.innerHTML = Math.floor(Math.random() * 100 + 1);
+	numberTwo.innerHTML = Math.floor(Math.random() * 100 + 1);
 });
