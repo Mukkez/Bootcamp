@@ -46,7 +46,7 @@ Schreibe eine Funktion, mit Hilfe von map(), die jede Temperatur in einem Array 
 
          `let fahrenheit = [0, 32, 45, 50, 75, 80, 99, 120];`
 
-  ## Assets
+  # Assets
 
   - map()
   - return
