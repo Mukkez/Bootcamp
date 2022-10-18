@@ -7,7 +7,7 @@ const separating = () => {
 		searchResult = userInput.search(seperator);
 
 	if (searchResult === -1) {
-		result.innerHTML = `<h6 class="me-3">Das Zeichen (${seperator}) konnte nicht gefunden werden</h6>`;
+		result.innerHTML = `<h6 class="me-3">Das Zeichen <span>(${seperator})</span> konnte nicht gefunden werden</h6>`;
 	} else {
 		switch (radio) {
 			case 'before':
