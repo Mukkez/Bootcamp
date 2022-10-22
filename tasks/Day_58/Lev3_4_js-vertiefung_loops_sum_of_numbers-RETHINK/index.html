@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<script type="text/javascript" src="assets/js/main.js" defer></script>
+		<title>Lev3_4_js-vertiefung_loops_sum_of_numbers-RETHINK </title>
+	</head>
+	<body>
+		<section id="designTitel">
+			<p>Js Vertiefung</p>
+			<p>CodeFlow Übung lev3_4: Summe der Zahlen</p>
+		</section>
+		<section id="designSection" class="section">
+			<div class="container">
+				<h1>Gib mir eine Zahl</h1>
+				<h3
+					>ich werde ALLE Zahlen bis zu dieser Zahl addieren,<br />
+					wenn sie durch die gewählten Zahlen teilbar sind!
+				</h3>
+				<label for="numMax">maximale Zahl</label>
+				<input type="number" name="numMax" id="numMax" value="10" min="0" />
+				<label for="number1">Erste Zahl</label>
+				<select name="number1" id="number1">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+				</select>
+				<label for="number2">zweite Zahl</label>
+				<select name="number2" id="number2">
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+				</select>
+				<input type="button" value="Count Me" onclick="countMe()" />
+				<div id="result">&nbsp;</div>
+			</div>
+		</section>
+	</body>
+</html>
