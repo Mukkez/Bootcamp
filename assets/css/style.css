@@ -4,32 +4,38 @@
 	font-weight: 400;
 	src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
+
 @font-face {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 400;
 	src: url(../fonts/Barlow/Barlow-Regular.ttf);
 }
+
 @font-face {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-weight: 900;
 	src: url(../fonts/Barlow/Barlow-Bold.ttf);
 }
+
 /* =================================================================== */
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: broder-box;
 }
+
 html {
 	height: 100vh;
 	width: 98vw;
 	font-family: 'Barlow', sans-serif;
 }
+
 body {
 	background-color: #04011c;
 }
+
 /*  ================== headline ================== */
 .timeline-titel {
 	font-style: bold;
@@ -45,10 +51,12 @@ body {
 	left: 30px;
 	border-radius: 10px;
 }
+
 .timeline-titel p:nth-of-type(1) {
 	color: rgb(255 255 0 / 83%);
 	font-size: 1.8rem;
 }
+
 .timeline-titel p:nth-of-type(2) {
 	color: white;
 	font-size: 1.3rem;
@@ -57,8 +65,9 @@ body {
 
 /* ========================= !! Tage immer anpassen !! ========================= */
 .section-block {
-	counter-increment: section 53;
+	counter-increment: section 59;
 }
+
 /* ============================================================================= */
 
 /*  ================== task ================== */
@@ -73,6 +82,7 @@ body {
 	width: 90%;
 	margin: 0 auto;
 }
+
 .timeline-block:before {
 	content: 'Day ' counter(section);
 	position: absolute;
@@ -86,26 +96,32 @@ body {
 	color: #ffffff;
 	font-size: 1rem;
 }
+
 .timeline-block:nth-child(odd) {
 	border-right: 3px solid;
 	padding-left: 0;
 }
+
 .timeline-block:nth-child(odd):before {
 	left: 100%;
 	margin-left: -40px;
 }
+
 .timeline-block:nth-child(even) {
 	border-left: 3px solid;
 	padding-right: 0;
 }
+
 .timeline-block:nth-child(even):before {
 	right: 100%;
 	margin-right: -40px;
 }
+
 .timeline-block:first-child {
 	border-top-right-radius: 0;
 	border-top-left-radius: 0;
 }
+
 .timeline-block:last-child {
 	border-bottom-right-radius: 0;
 	border-bottom-left-radius: 0;
@@ -119,6 +135,7 @@ body {
 	padding: 16px 40px 38px;
 	border-radius: 10px;
 }
+
 .timeline-content-info {
 	color: #fff;
 	font-size: 28px;
@@ -130,6 +147,7 @@ body {
 	padding: 0 0 16px;
 	border-bottom: 1px solid #716f7e;
 }
+
 .timeline-content-info p {
 	color: #fff;
 	font-size: 1.5rem;
@@ -148,12 +166,15 @@ body {
 	font-weight: 400;
 	position: relative;
 }
+
 .timeline-content-box:hover {
 	background: rgba(234, 234, 255, 0.05);
 }
+
 .timeline-content-box p {
 	font-size: 1.4rem;
 }
+
 .timeline-content-box .edited {
 	display: flex;
 	font-weight: 600;
@@ -167,23 +188,29 @@ body {
 	margin: 10px 0 5px 0;
 	width: 190px;
 }
+
 .timeline-content-box .edited span {
 	font-size: 2rem;
 	margin: 7px 0 5px 0;
 }
+
 .timeline-content-box .edited:hover {
 	background-position: 0;
 }
+
 .timeline-content-box .edited a {
 	font-size: 1.3rem;
 	margin: 10px 0 0 5px;
 }
+
 .timeline-content-box .notEdited {
 	margin: 18px 0 0px 5px;
 }
+
 .timeline-content-box .notEdited span {
 	font-size: 2rem;
 }
+
 .timeline-content-box .notEdited p {
 	font-size: 1.3rem;
 	margin: -32px 0 5px 45px;
@@ -195,12 +222,15 @@ body {
 	font-size: 1.1rem;
 	padding-right: 10px;
 }
+
 .fa-angle-double-right:before {
 	content: '\f101';
 }
+
 h2 {
 	color: #fff;
 }
+
 hr {
 	margin-bottom: 15px;
 }
@@ -215,6 +245,7 @@ hr {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
 .content-skills li {
 	background: #19162e;
 	display: inline-block;
@@ -225,6 +256,7 @@ hr {
 	flex-grow: 1;
 	border-radius: 5px;
 }
+
 .timeline-content:after {
 	content: '';
 	display: table;
