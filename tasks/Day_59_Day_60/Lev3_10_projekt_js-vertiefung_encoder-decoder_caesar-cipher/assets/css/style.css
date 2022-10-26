@@ -1,0 +1,171 @@
+@font-face {
+	font-family: 'Caesar';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../fonts/caesar-dressing-v21-latin-regular.ttf);
+}
+
+/* ==========
+Allgemein
+========== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--primaryColour: #000;
+	--secondaryColour: #fff;
+	--accentColour: #a4987a;
+	--margin: 1rem;
+}
+
+body {
+	height: 100vh;
+	background-image: url(../img/back.jpg);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 3rem;
+	transition: all 250ms;
+}
+
+/* ==========
+MAIN
+========== */
+main {
+	background-color: var(--secondaryColour);
+	padding: 1rem;
+	position: relative;
+}
+
+.font {
+	font-family: 'Caesar';
+}
+
+textarea {
+	width: 100%;
+	min-height: 100px;
+	margin-bottom: var(--margin);
+	padding: 0.5rem;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+input {
+	accent-color: var(--accentColour);
+}
+
+/* Input Schlüssel */
+
+div:first-of-type {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+div:first-of-type input {
+	width: 50%;
+	cursor: pointer;
+}
+
+div:first-of-type output {
+	color: var(--accentColour);
+	font-size: 0.8rem;
+}
+
+/* Buttons */
+
+input[type="button"] {
+	background-color: var(--accentColour);
+	color: var(--secondaryColour);
+	border: none;
+	padding: 0.4rem 2rem;
+	margin: var(--margin) auto;
+	cursor: pointer;
+}
+
+input[type="button"]:hover {
+	scale: 1.01;
+}
+
+/* Alphabet */
+
+#outputAlphabet,
+#outputNewAlphabet {
+	width: 100%;
+	display: none;
+	grid-template-columns: repeat(26, 1fr);
+	transition: all 750ms;
+}
+
+#outputAlphabet p,
+#outputNewAlphabet p {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 250ms;
+	height: 2rem;
+	font-family: 'Caesar';
+}
+
+#outputNewAlphabet p {
+	color: var(--accentColour);
+}
+
+#outputAlphabet p:hover {
+	background-color: var(--accentColour);
+}
+
+#outputNewAlphabet p:hover {
+	background-color: var(--accentColour);
+	color: var(--primaryColour);
+}
+
+/* result */
+
+#outresult {
+	word-break: break-all;
+}
+
+/* hideShow button */
+
+#hideAlphabet {
+	position: absolute;
+	font-size: 1.3rem;
+	right: 0.1rem;
+	bottom: 0;
+	cursor: none;
+	border: none;
+	background-color: var(--secondaryColour);
+}
+
+/* Output Result */
+#outputResult {
+	margin-top: var(--margin);
+	font-size: 1.5rem;
+}
+
+/* media */
+@media (max-width: 650px) {
+	body {
+		padding: 1rem;
+	}
+
+	main {
+		min-height: 60vh;
+	}
+
+	#outputAlphabet,
+	#outputNewAlphabet {
+		grid-template-columns: repeat(13, 1fr);
+	}
+
+	#outputNewAlphabet {
+		margin-top: .5rem;
+	}
+}

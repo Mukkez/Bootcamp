@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/img/icon.jpeg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script type="text/javascript" src="assets/js/main.js" defer></script>
+  <title>Casear Verschlüsserlung</title>
+</head>
+
+<body>
+  <main>
+    <label class="font" for="userInput">Zu verschlüssende Eingabe</label>
+    <textarea id="userInput" placeholder="hier den Text eingeben.." oninput="btnCheck()"></textarea>
+    <div>
+      <label for="userKey">Schlüssel</label>
+      <input type="range" value="0" min="1" max="25" id="userKey" oninput="btnCheck()" />
+      <output id="outputKey">0</output>
+    </div>
+    <div>
+      <input type="button" value="Überprüfen" id="dekodieren" onclick="btnChange()" />
+    </div>
+    <div id="outputAlphabet"></div>
+    <div id="outputNewAlphabet"></div>
+    <button id="hideAlphabet" onclick="hideShow()">🔐</button>
+    <div class="font" id="outputResult"></div>
+  </main>
+</body>
+
+</html>
