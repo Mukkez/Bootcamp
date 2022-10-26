@@ -2,11 +2,11 @@
 
 Eine Übung im SuperCode Bootcamp als Gruppe:
 
-[Pass80](https://github.com/Pass80)
+👨‍💻 - [Pass80](https://github.com/Pass80) - 🖥️
 
-[WeiMing](https://github.com/WeiMingTay)
+👨‍💻 - [WeiMing](https://github.com/WeiMingTay) - 🖥️
 
-[Mukkez](https://github.com/Mukkez)
+👨‍💻 - [Mukkez](https://github.com/Mukkez) - 🖥️
 
 ## 🎓 Aufgabe
 
