@@ -10,6 +10,15 @@ let userInput = document.getElementById('userInput'),
 	op = '',
 	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
+// versteckt das Alphabet
+function hideShow() {
+	if (outputNewAlphabet.style.display === 'none') {
+		outputNewAlphabet.style.display = 'grid';
+	} else {
+		outputNewAlphabet.style.display = 'none';
+	}
+}
+
 function addWert(e) {
 	userInput.innerHTML += e;
 }
@@ -90,15 +99,4 @@ function check(a) {
 			return String.fromCharCode(lettersNumber);
 		})
 		.join('');
-}
-
-// versteckt das Alphabet
-function hideShow() {
-	if (outputAlphabet.style.display === 'none') {
-		outputAlphabet.style.display = 'grid';
-		outputNewAlphabet.style.display = 'grid';
-	} else {
-		outputAlphabet.style.display = 'none';
-		outputNewAlphabet.style.display = 'none';
-	}
 }
