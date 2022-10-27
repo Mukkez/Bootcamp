@@ -3,6 +3,7 @@
 	font-style: normal;
 	font-weight: 400;
 	src: url(../fonts/caesar-dressing-v21-latin-regular.ttf);
+	color: hsl(163, 100%, 46%);
 }
 
 /* ==========
@@ -42,6 +43,7 @@ main {
 
 .font {
 	font-family: 'Caesar';
+	-webkit-text-stroke: 1px var(--accentColour)
 }
 
 textarea {

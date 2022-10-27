@@ -10,10 +10,21 @@ let userInput = document.getElementById('userInput'),
 	op = '',
 	alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
+function addWert(e) {
+	userInput.innerHTML += e;
+}
+function btnSpace() {
+	userInput.innerHTML += ' ';
+}
+function btnDelete() {
+	let newUserInput = userInput.innerHTML;
+	userInput.innerHTML = newUserInput.replace(/.$/, '');
+}
+
 // Gibt das Alphabet auf der Seite aus.
 outputAlphabet.innerHTML = alphabet
 	.map((b) => {
-		return `<p>${b}</p>`;
+		return `<p onclick="addWert('${b}')">${b}</p>`;
 	})
 	.join(' ');
 
