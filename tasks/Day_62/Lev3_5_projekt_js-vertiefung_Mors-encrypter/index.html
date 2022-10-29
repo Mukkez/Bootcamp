@@ -19,10 +19,9 @@
 		<div id="outputAlphabet"></div>
 		<div id="morseAlphabetOutput"></div>
 		<div>
-			<input type="text" id="input-text" placeholder="Put your message here">
-			<input type="button" value="Encrypt" onclick="encrypt()">
+			<textarea id="input-text" placeholder="Put your message here.." oninput="encrypt()"></textarea>
 		</div>
-		<div id="output"></div>
+		<div id="output" style="display: none;"></div>
 	</section>
 </body>
 

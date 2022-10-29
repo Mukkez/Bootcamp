@@ -9,7 +9,7 @@ let morseAlphabet = [
 	{ letter: '8', morseCode: '---..' },
 	{ letter: '9', morseCode: '----.' },
 	{ letter: '0', morseCode: '-----' },
-	{ letter: ' ', morseCode: '    ' },
+	{ letter: ' ', morseCode: '🐶' },
 	{ letter: 'A', morseCode: '.-' },
 	{ letter: 'B', morseCode: '-...' },
 	{ letter: 'C', morseCode: '-.-.' },
@@ -54,6 +54,7 @@ let encrypt = () => {
 	for (let i = 0; i < input.length; i++) {
 		for (match of morseAlphabet) {
 			if (match.letter == input[i]) {
+				output.style.display = 'block';
 				output.innerHTML += match.morseCode;
 			}
 		}
