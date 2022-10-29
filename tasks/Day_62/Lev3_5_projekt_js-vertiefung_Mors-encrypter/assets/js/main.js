@@ -43,13 +43,18 @@ const output = document.getElementById('output');
 const output2 = document.getElementById('output2');
 
 let encrypt = () => {
+	let inputty = inputText.value.toUpperCase();
 	output.innerHTML = '';
 	output2.innerHTML = '';
-	for (inputIndex of inputText.value.toUpperCase()) {
+	for (let k = 0; k < inputty.length; k++) {
 		for (match of morseAlphabet) {
-			if (match.letter === inputIndex) {
+			if (match.letter == inputty[k]) {
 				output.innerHTML += match.morseCode;
-				output2.innerHTML += match.letter + ' -> ' + match.morseCode + '<br>';
+				if (match.letter === ' ') {
+					output2.innerHTML += '<br>';
+				} else {
+					output2.innerHTML += match.letter + ' = ' + match.morseCode + '<br>';
+				}
 			}
 		}
 	}
