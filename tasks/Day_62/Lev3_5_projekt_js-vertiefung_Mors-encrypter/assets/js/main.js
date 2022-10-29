@@ -53,6 +53,8 @@ let encrypt = () => {
 				output.innerHTML += match.morseCode;
 				//bonus
 				output2.innerHTML += match.letter + ' -> ' + match.morseCode + '<br>';
+			} else {
+				output.innerHTML = `Buchstabe ( ${inputIndex} ) nicht gefunden.`;
 			}
 		}
 	}
