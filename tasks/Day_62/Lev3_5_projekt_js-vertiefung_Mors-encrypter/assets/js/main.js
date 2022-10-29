@@ -42,12 +42,10 @@ const inputText = document.getElementById('input-text');
 const output = document.getElementById('output');
 
 let encrypt = () => {
-	let input = inputText.value.toUpperCase();
-	output.innerHTML = '';
-	for (inputIndex of input) {
+	for (inputIndex of inputText.value.toUpperCase()) {
 		for (match of morseAlphabet) {
 			if (match.letter === inputIndex) {
-				output.innerHTML += match.morseCode;
+				output.innerHTML = match.morseCode;
 			}
 		}
 	}
