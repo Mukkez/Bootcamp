@@ -80,3 +80,27 @@ body {
 input {
 	padding: 10px;
 }
+
+
+
+/* Alphabet */
+#outputAlphabet,
+#morseAlphabetOutput {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(37, 1fr);
+	transition: all 750ms;
+	background-color: white;
+}
+
+#outputAlphabet p,
+#morseAlphabetOutput p {
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: all 250ms;
+	height: 2rem;
+	font-family: 'Caesar';
+}

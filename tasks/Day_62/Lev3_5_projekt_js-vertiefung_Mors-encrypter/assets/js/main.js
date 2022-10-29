@@ -38,23 +38,23 @@ let morseAlphabet = [
 	{ letter: 'Z', morseCode: '--..' },
 ];
 
-const inputText = document.getElementById('input-text');
-const output = document.getElementById('output');
-const output2 = document.getElementById('output2');
+let inputText = document.getElementById('input-text'),
+	output = document.getElementById('output'),
+	outputAlphabet = document.getElementById('outputAlphabet'),
+	morseAlphabetOutput = document.getElementById('morseAlphabetOutput');
+
+for (morseOutput of morseAlphabet) {
+	outputAlphabet.innerHTML += `<p>${morseOutput.letter}</p>`;
+	morseAlphabetOutput.innerHTML += `<p>${morseOutput.morseCode}</p>`;
+}
 
 let encrypt = () => {
-	let inputty = inputText.value.toUpperCase();
+	let input = inputText.value.toUpperCase();
 	output.innerHTML = '';
-	output2.innerHTML = '';
-	for (let k = 0; k < inputty.length; k++) {
+	for (let i = 0; i < input.length; i++) {
 		for (match of morseAlphabet) {
-			if (match.letter == inputty[k]) {
+			if (match.letter == input[i]) {
 				output.innerHTML += match.morseCode;
-				if (match.letter === ' ') {
-					output2.innerHTML += '<br>';
-				} else {
-					output2.innerHTML += match.letter + ' = ' + match.morseCode + '<br>';
-				}
 			}
 		}
 	}
