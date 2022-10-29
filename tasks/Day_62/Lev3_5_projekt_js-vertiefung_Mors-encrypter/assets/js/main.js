@@ -41,11 +41,18 @@ let morseAlphabet = [
 const inputText = document.getElementById('input-text');
 const output = document.getElementById('output');
 
+//bonus
+const output2 = document.getElementById('output2');
+
 let encrypt = () => {
+	output.innerHTML = '';
+	output2.innerHTML = '';
 	for (inputIndex of inputText.value.toUpperCase()) {
 		for (match of morseAlphabet) {
 			if (match.letter === inputIndex) {
-				output.innerHTML = match.morseCode;
+				output.innerHTML += match.morseCode;
+				//bonus
+				output2.innerHTML += match.letter + ' -> ' + match.morseCode + '<br>';
 			}
 		}
 	}
