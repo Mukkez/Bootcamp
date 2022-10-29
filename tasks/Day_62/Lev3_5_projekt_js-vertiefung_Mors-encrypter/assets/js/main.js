@@ -40,7 +40,6 @@ let morseAlphabet = [
 
 const inputText = document.getElementById('input-text');
 const output = document.getElementById('output');
-
 const output2 = document.getElementById('output2');
 
 let encrypt = () => {
