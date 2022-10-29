@@ -41,7 +41,6 @@ let morseAlphabet = [
 const inputText = document.getElementById('input-text');
 const output = document.getElementById('output');
 
-//bonus
 const output2 = document.getElementById('output2');
 
 let encrypt = () => {
@@ -51,10 +50,7 @@ let encrypt = () => {
 		for (match of morseAlphabet) {
 			if (match.letter === inputIndex) {
 				output.innerHTML += match.morseCode;
-				//bonus
 				output2.innerHTML += match.letter + ' -> ' + match.morseCode + '<br>';
-			} else {
-				output.innerHTML = `Buchstabe ( ${inputIndex} ) nicht gefunden.`;
 			}
 		}
 	}
