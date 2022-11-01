@@ -1,12 +1,12 @@
-let random = Math.ceil(Math.random() * 1);
-let input = Number(prompt('Gibt eine Zahl ein'));
+let userNumber = document.getElementById('userNumber'),
+	output = document.getElementById('output');
 
-if (isNaN(input) == false) {
-	if (input === random) {
-		console.log('Richtig! Du hast gewonnen! Du hast', input, 'eingegeben und die Nummer ist:', random);
+let game = () => {
+	let random = Math.floor(Math.random() * 10) + 1;
+
+	if (userNumber.value == random) {
+		output.innerHTML = `<p class="true"> Richtig! Du hast gewonnen!</p> <p>Du hast <strong>${userNumber.value}</strong> eingegeben und die Zufallszahl ist: <strong>${random}</strong></p>`;
 	} else {
-		console.log('Falsch! Du hast verloren! Du hast', input, 'eingegeben und die Nummer ist:', random);
+		output.innerHTML = `<p class="false"> Falsch! Du hast verloren! </p><p>Du hast <strong>${userNumber.value}</strong> eingegeben und die Zufallszahl ist: <strong>${random}</strong></p>`;
 	}
-} else {
-	console.log('Du hast keine Nummer eingegeben');
-}
+};

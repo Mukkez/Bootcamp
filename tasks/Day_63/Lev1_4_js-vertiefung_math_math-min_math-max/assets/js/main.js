@@ -2,8 +2,10 @@ let array = [393, 205, 479, 47, 376, 267, 385, 2, 190, 383, 286, 462, 115, 138, 
 
 console.log(array);
 
+console.log('%c----------- Finde mit Math.min den niedrigsten Wert aus dem Array -------', 'color:#00ff00');
 let min = Math.min(...array);
 console.log('Minimum : ' + min);
 
+console.log('%c----------- Finde nun mit Math.max den höchsten Wert aus dem Array -------', 'color:#00ff00');
 let max = Math.max(...array);
 console.log('Maximum : ' + max);
