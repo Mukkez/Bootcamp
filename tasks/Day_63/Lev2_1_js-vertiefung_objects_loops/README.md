@@ -22,7 +22,7 @@ Der Code dazu ist im Kommentarbereich.
 
 ## 💻 Running
 
-Zur Seite —> - [Lev2_1_js-vertiefung_objects_loop](https://mukkez.github.io/Bootcamp/tasks/Day_63/Lev2_1_js-vertiefung_objects_loop/)
+Zur Seite —> - [Lev2_1_js-vertiefung_objects_loop](https://mukkez.github.io/Bootcamp/tasks/Day_63/Lev2_1_js-vertiefung_objects_loops/)
 
 <p align="left">
 </p>
