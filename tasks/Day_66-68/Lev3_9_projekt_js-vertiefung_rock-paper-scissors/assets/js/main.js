@@ -19,8 +19,11 @@ const rockBtn = document.getElementById('rock'),
 let playerScore = 0,
 	computerScore = 0,
 	activeRoundScore = 0,
-	totalRoundScore = 0;
+	totalRoundScore = 0,
+	choisPlayerText = '',
+	compChoiseText = '';
 
+// was passiert wenn gecheckt wird
 function checkRounds() {
 	if (rounds5.checked) {
 		totalRoundScore = 5;
@@ -40,7 +43,7 @@ function checkRounds() {
 		activeRound.innerHTML = 0;
 	}
 }
-
+// Symbole stehen für Zahlen 1-3
 function playerChooseRock() {
 	const rock = 1;
 	compare(rock);
@@ -55,15 +58,32 @@ function playerChooseScissors() {
 }
 
 function compare(choisPlayer) {
-	let compChoise = Math.floor(Math.random() * 3) + 1;
+	let compChoise = Math.floor(Math.random() * 3) + 1; //random Zahl
 
 	if (rounds5.checked || rounds10.checked || rounds15.checked || rounds20.checked) {
+		//wenn gechecked
 		if (activeRoundScore !== totalRoundScore) {
+			//wenn aktive runden<totalrunden
 			if (choisPlayer == compChoise) {
+				// wenn klick von Player = klick von computer
+
+				if (choisPlayer == 1 || compChoise == 1) {
+					choisPlayerText = 'Stein';
+					compChoiseText = 'Stein';
+				} else if (choisPlayer == 2 || compChoise == 2) {
+					choisPlayerText = 'Papier';
+					compChoiseText = 'Papier';
+				} else if (choisPlayer == 3 || compChoise == 3) {
+					choisPlayerText = 'Schere';
+					compChoiseText = 'Schere';
+				}
+
 				outputText.innerHTML = 'Unentschieden';
 				outputText.style.color = 'yellow';
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = choisPlayerText;
+				computerChoice.innerHTML = compChoiseText;
 			} else if (choisPlayer == 1 && compChoise == 2) {
 				outputText.innerHTML = 'Papier umwickelt Stein, Der Computer gewinnt diese Runde!';
 				outputText.style.color = 'red';
@@ -73,40 +93,50 @@ function compare(choisPlayer) {
 				gamerChoice.innerHTML = 'Stein';
 				computerChoice.innerHTML = 'Papier';
 			} else if (choisPlayer == 1 && compChoise == 3) {
-				outputText.innerHTML = 'Der Spieler gewinnt diese Runde!';
+				outputText.innerHTML = 'Stein bricht Schere, Der Spieler gewinnt diese Runde!';
 				outputText.style.color = 'green';
 				playerScore++;
 				playerCounter.innerHTML = playerScore;
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = 'Stein';
+				computerChoice.innerHTML = 'Schere';
 			} else if (choisPlayer == 2 && compChoise == 1) {
-				outputText.innerHTML = 'Der Spieler gewinnt diese Runde!';
+				outputText.innerHTML = 'Papier umwickelt Stein, Der Spieler gewinnt diese Runde!';
 				outputText.style.color = 'green';
 				playerScore++;
 				playerCounter.innerHTML = playerScore;
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = 'Papier';
+				computerChoice.innerHTML = 'Stein';
 			} else if (choisPlayer == 2 && compChoise == 3) {
-				outputText.innerHTML = 'Der Computer gewinnt diese Runde!';
+				outputText.innerHTML = 'Schere zerschneidet Papiert, Der Computer gewinnt diese Runde!';
 				outputText.style.color = 'red';
 				computerScore++;
 				computerCounter.innerHTML = computerScore;
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = 'Papier';
+				computerChoice.innerHTML = 'Schere';
 			} else if (choisPlayer == 3 && compChoise == 1) {
-				outputText.innerHTML = 'Der Computer gewinnt diese Runde!';
+				outputText.innerHTML = 'Stein bricht Schere, Der Computer gewinnt diese Runde!';
 				outputText.style.color = 'red';
 				computerScore++;
 				computerCounter.innerHTML = computerScore;
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = 'Schere';
+				computerChoice.innerHTML = 'Stein';
 			} else if (choisPlayer == 3 && compChoise == 2) {
-				outputText.innerHTML = 'Der Spieler gewinnt diese Runde!';
+				outputText.innerHTML = 'Schere zerschneidet Papiert, Der Spieler gewinnt diese Runde!';
 				outputText.style.color = 'green';
 				playerScore++;
 				playerCounter.innerHTML = playerScore;
 				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
+				gamerChoice.innerHTML = 'Schere';
+				computerChoice.innerHTML = 'Papier';
 			}
 		} else {
 			if (playerScore > computerScore) {
@@ -127,13 +157,6 @@ function compare(choisPlayer) {
 }
 
 function restart() {
-	activeRound.innerHTML = 0;
-	playerCounter.innerHTML = 0;
-	computerCounter.innerHTML = 0;
-	outputText.innerHTML = '';
-	outputText.style.color = 'white';
-	playerScore = 0;
-	computerScore = 0;
-	activeRoundScore = 0;
+	window.location.reload(true);
 	stopConfetti();
 }

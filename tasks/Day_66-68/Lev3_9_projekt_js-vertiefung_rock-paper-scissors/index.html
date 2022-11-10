@@ -21,17 +21,15 @@
 			<div>
 				<p id="outputRadio"></p>
 			</div>
-			<div>
+			<div class="radio-toolbar">
 				<input type="radio" id="radio5" onchange="checkRounds()" name="radio" value="5">
-				<label for="radio">5</label>
+				<label for="radio5">5</label>
 				<input type="radio" id="radio10" onchange="checkRounds()" name="radio" value="10">
-				<label for="radio">10</label>
-			</div>
-			<div>
+				<label for="radio10">10</label>
 				<input type="radio" id="radio15" onchange="checkRounds()" name="radio" value="15">
-				<label for="radio">15</label>
+				<label for="radio15">15</label>
 				<input type="radio" id="radio20" onchange="checkRounds()" name="radio" value="20">
-				<label for="radio">20</label>
+				<label for="radio20">20</label>
 			</div>
 
 	</div>
@@ -64,9 +62,9 @@
 	<div id="game">
 		<p>Let's play</p>
 		<div id="gameSymbols">
-			<p id="scissors" onclick="playerChooseScissors()">✌️</p>
 			<p id="rock" onclick="playerChooseRock()">✊</p>
 			<p id="paper" onclick="playerChoosePaper()">🤚</p>
+			<p id="scissors" onclick="playerChooseScissors()">✌️</p>
 		</div>
 		<p>MAKE YOUR MOVE</p>
 		<button id="restart" onclick="restart()">restart</button>
