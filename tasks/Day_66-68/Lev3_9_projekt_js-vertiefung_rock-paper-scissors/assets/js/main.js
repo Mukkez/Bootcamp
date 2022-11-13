@@ -89,6 +89,7 @@ function compare(choisPlayer) {
 				outputText.style.color = 'red';
 				computerScore++;
 				computerCounter.innerHTML = computerScore;
+				activeRoundScore++;
 				activeRound.innerHTML = activeRoundScore;
 				gamerChoice.innerHTML = 'Stein';
 				computerChoice.innerHTML = 'Papier';
