@@ -1,0 +1,3 @@
+@mixin gradient {
+	background: linear-gradient(60deg, $color-blue 00% 11%, $color-gold 11% 22%, $color-red 22% 33%, $color-purple 33% 44%, $color-blue 44% 56%, $color-gold 56% 67%, $color-red 67% 78%, $color-purple 78% 89%, $color-blue 89% 100%);
+}

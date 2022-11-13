@@ -1,0 +1,105 @@
+@import '_default';
+
+$blue: rgba(0, 0, 255, 0.678);
+
+%aside {
+	border: 0.2rem solid $blue;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+h1,
+h2 {
+	font-size: 1rem;
+}
+
+.nav_links {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 1rem;
+	background-color: $blue;
+}
+
+li {
+	padding: 1rem;
+	list-style: none;
+	a {
+		text-decoration: none;
+		color: black;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+}
+
+.header {
+	height: 6rem;
+	text-align: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	padding: 1.5rem;
+}
+
+.main {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	.section_text,
+	.section_images {
+		margin: 1rem;
+		h3 {
+			text-align: center;
+		}
+	}
+	.section_text {
+		@media screen and (min-width: 600px) {
+			width: 70%;
+		}
+	}
+	.section_images {
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+		@media screen and (min-width: 600px) {
+			display: flex;
+			flex-flow: row wrap;
+		}
+		img {
+			height: 12rem;
+			width: 18rem;
+			margin: 0 0.5rem 1rem 0.5rem;
+		}
+	}
+}
+
+.aside {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin: 1rem;
+	@media screen and (min-width: 600px) {
+		display: flex;
+		flex-flow: row wrap;
+	}
+	.first_aside,
+	.second_aside,
+	.third_aside,
+	.fourth_aside {
+		@extend %aside;
+		@media screen and (min-width: 600px) {
+			width: 45%;
+			margin: 0.5rem;
+		}
+	}
+}
+
+.footer {
+	height: 5rem;
+	margin-top: 1rem;
+	background-color: $blue;
+	.footer_links {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1rem;
+	}
+}

@@ -1,0 +1,61 @@
+@import '_default';
+
+$brand-twitter: #1da1f2;
+$behance: #1769ff;
+$facebook: #1877f2;
+$vimeo: #1ab7ea;
+$snap: #fffc00;
+$air: #fd5c63;
+$amazon: #ff9900;
+$android: #a4c639;
+$stack: #f48024;
+$ubuntu: #dd4814;
+$git: #4078c0;
+$js: #f7df1e;
+
+div {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+i {
+	font-size: 4rem;
+	&.la-twitter {
+		color: $brand-twitter;
+	}
+	&.la-behance {
+		color: $behance;
+	}
+	&.la-facebook-f {
+		color: $facebook;
+	}
+	&.la-vimeo {
+		color: $vimeo;
+	}
+	&.la-snapchat {
+		color: $snap;
+	}
+	&.la-airbnb {
+		color: $air;
+	}
+	&.la-amazon {
+		color: $amazon;
+	}
+	&.la-android {
+		color: $android;
+	}
+	&.la-stack-overflow {
+		color: $stack;
+	}
+	&.la-ubuntu {
+		color: $ubuntu;
+	}
+	&.la-github {
+		color: $git;
+	}
+	&.la-js-square {
+		color: $js;
+	}
+}
