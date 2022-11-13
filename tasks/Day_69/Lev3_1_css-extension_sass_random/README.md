@@ -1,4 +1,4 @@
-## CSS Extension:SASS - Projekt_Lev3_1_css-extension_sass_random
+## CSS Extension:SASS - Lev3_1_css-extension_sass_random
 
 Eine Übung im SuperCode Bootcamp
 
@@ -53,7 +53,7 @@ Gradient Stripes Generator http://stripesgenerator.com/
 
 ## 💻 Running
 
-Zur Seite —> - [Projekt_Lev3_1_css-extension_sass_random](https://mukkez.github.io/Bootcamp/tasks/Day_69/Projekt_Lev3_1_css-extension_sass_random/)
+Zur Seite —> - [Lev3_1_css-extension_sass_random](https://mukkez.github.io/Bootcamp/tasks/Day_69/Lev3_1_css-extension_sass_random/)
 
 <p align="left">
 </p>
