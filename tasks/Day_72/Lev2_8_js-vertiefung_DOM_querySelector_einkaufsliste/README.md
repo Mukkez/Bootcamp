@@ -1,19 +1,22 @@
-## Js Vertiefung - Lev2_7_js-vertiefung_DOM_querySelector_createTextNode_appendChild_nummern
+## Js Vertiefung - Lev2_8_js-vertiefung_DOM_querySelector_einkaufsliste
 
 Eine Übung im SuperCode Bootcamp
 
 ## 🎓 Aufgabe
 
-- Schreibe eine Funktion, die beim Anklicken des Buttons ein Element mit aufsteigenden Nummern erstellt.
+Schreibe eine Funktion, die beim Anklicken des Buttons neues Listenelement erstellt.
+
 - Der HTML und CSS Code befindet sich im Kommentar.
-  - Nutze
+- Nutze
   - querySelector()
   - addEventListener()
-  - let counter = 0;
   - createElement()
-  - textContent()
+  - createTextNode()
   - appendChild()
-  - classList
+
+**Bonus:** Beim Betätigen der ENTER-Taste wird ebenfalls ein Listenelement erstellt wird.
+
+- Suche nach keycode.
 
 ## 📸 Screenshots
 
@@ -21,7 +24,7 @@ Eine Übung im SuperCode Bootcamp
 
 ## 💻 Running
 
-Zur Seite —> - [Lev2_7_js-vertiefung_DOM_querySelector_createTextNode_appendChild_nummern](https://mukkez.github.io/Bootcamp/tasks/Day_72/Lev2_7_js-vertiefung_DOM_querySelector_createTextNode_appendChild_nummern/)
+Zur Seite —> - [Lev2_8_js-vertiefung_DOM_querySelector_einkaufsliste](https://mukkez.github.io/Bootcamp/tasks/Day_72/Lev2_8_js-vertiefung_DOM_querySelector_einkaufsliste/)
 
 <p align="left">
 </p>
