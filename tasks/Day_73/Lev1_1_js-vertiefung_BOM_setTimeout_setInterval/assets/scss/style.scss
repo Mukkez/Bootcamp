@@ -1,0 +1,27 @@
+@import '_default';
+
+#content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#content p {
+	font-size: 1.5rem;
+}
+
+img {
+	margin-top: 15px;
+	height: 250px;
+}
+button {
+	height: 40px;
+	width: 100px;
+	background-color: #64b2cd;
+	color: #333;
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+	border: none;
+}
