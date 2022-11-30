@@ -1,25 +1,21 @@
-## Js Vertiefung - Lev3_3_js-vertiefung_complicated_loops_with_input
+## Js Vertiefung - Lev3_21_js-vertiefung_schuh_shop
 
 Eine Übung im SuperCode Bootcamp
 
 ## 🎓 Aufgabe
 
-- Wir verfeinern unseren “Loooooop” aus Aufgabe 2_2
-- Jetzt wollen wir eine Fehlermeldung ausgeben, wenn der User 0 eingibt
-- Zusätzlich überprüfen wir, ob der User eine gerade Zahl eingegeben hat
-  - wenn das der Fall ist werden wir nur die Buchstaben“o” in unsere Ausgabe schreiben
-  - Bsp: // input: 4 output: Loooop
-- wenn die Zahl ungerade ist
-  - möchten wir, dass sich die Buchstaben “o” und die Zahlen “0” in der Ausgabe abwechseln
-  - Bsp: // input: 5 output: Lo0o0op
+Heute erstellst du einen Schuh-Online-Shop.
+Das Figma-Layout findest du hier und den Prototypen kannst du dir hier angucken.
+
+Die Inhalte der Seite werden statisch über das HTML eingefügt. Nur die Liste mit den angebotenen Schuhen (unter der Überschrift “New arrivals”), fügst du über das JavaScript ein. Dafür findest du unten in den Kommentaren ein Array, was verarbeitet werden soll.
 
 ## 📸 Screenshots
 
-![App Screenshot](assets/img/screen.gif)
+![App Screenshot](assets/img/screen.png)
 
 ## 💻 Running
 
-Zur Seite —> - [Lev3_3_js-vertiefung_complicated_loops_with_input](https://mukkez.github.io/Bootcamp/tasks/Day_69/Lev3_3_js-vertiefung_complicated_loops_with_input/)
+Zur Seite —> - [Lev3_21_js-vertiefung_schuh_shop](https://mukkez.github.io/Bootcamp/tasks/Day_74-Day_78/Lev3_21_js-vertiefung_schuh_shop/)
 
 <p align="left">
 </p>
