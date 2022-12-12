@@ -1,4 +1,4 @@
-const Task = (props) => {
+const task = (props) => {
 	return (
 		<li>
 			<img src={props.task.iconLeft} alt="" />
@@ -8,4 +8,4 @@ const Task = (props) => {
 	);
 };
 
-export default Task;
+export default task;

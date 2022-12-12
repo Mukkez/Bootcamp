@@ -1,6 +1,6 @@
 import Task from './Task';
 
-const taskList = [
+const list = [
 	{ name: 'Hit the gym', iconLeft: '/img/check.png', iconRight: '/img/gym.png' },
 	{ name: 'Pay bills', iconLeft: '/img/check.png', iconRight: '/img/bill.png' },
 	{ name: 'Meet George', iconLeft: '/img/doing.png', iconRight: '/img/dance.png' },
@@ -9,17 +9,17 @@ const taskList = [
 	{ name: 'Organize office', iconLeft: '/img/no.png', iconRight: '/img/organize.png' },
 ];
 
-const TaskList = () => {
+const taskList = () => {
 	return (
 		<ul>
-			<Task task={taskList[0]} />
-			<Task task={taskList[1]} />
-			<Task task={taskList[2]} />
-			<Task task={taskList[3]} />
-			<Task task={taskList[4]} />
-			<Task task={taskList[5]} />
+			<Task task={list[0]} />
+			<Task task={list[1]} />
+			<Task task={list[2]} />
+			<Task task={list[3]} />
+			<Task task={list[4]} />
+			<Task task={list[5]} />
 		</ul>
 	);
 };
 
-export default TaskList;
+export default taskList;
