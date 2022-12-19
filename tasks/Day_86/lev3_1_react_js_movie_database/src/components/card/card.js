@@ -1,6 +1,6 @@
 import React from 'react';
-import CardItem from './card_item';
-import MovieCardButton from './movie_card_button';
+import CardItem from '../item/item';
+import MovieCardButton from '../btn/btn';
 import { useState, useEffect } from 'react';
 
 const MovieCard = (props) => {

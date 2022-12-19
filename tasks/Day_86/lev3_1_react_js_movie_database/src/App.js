@@ -1,5 +1,5 @@
 import './App.css';
-import MovieCard from './components/movie_card';
+import MovieCard from './components/card/card';
 import data from './data/movie_data.json';
 
 function App() {
