@@ -3,7 +3,7 @@ import CardItem from '../item/item';
 import MovieCardButton from '../btn/btn';
 import { useState, useEffect } from 'react';
 
-const MovieCard = (props) => {
+const Card = (props) => {
 	const [movieData, setMovieData] = useState([]);
 
 	useEffect(() => {
@@ -73,4 +73,4 @@ const MovieCard = (props) => {
 	);
 };
 
-export default MovieCard;
+export default Card;
