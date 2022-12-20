@@ -1,17 +1,24 @@
-## React – Movie Database - Lev1_1-React_JS-Movie Database
+## React – Movie Database - Lev3_1-React_JS-Movie Database
 
 Eine Übung im SuperCode Bootcamp
 
 ## 🎓 Aufgabe
 
-In dieser Übung wollen wir eine Film-Datenbank erstellen
+In dieser Übung wollen wir eine komplexere Film-Datenbank erstellen
 
-Nutze die data.js (s. Kommentarbereich und Extra-Datei im Classroom).
-Schaue dir die Ergebnisvorschau an.
+- Nutze die data.js
+- Schaue dir die Ergebnisvorschau an
+- Dieses Mal wollen wir die Datenbank auch sortieren können!
+- Schaffe dir Funktionen, die es dir ermöglichen, die Datenbank zu sortieren:
+  - Alphabetisch (A-Z und Z-A)
+  - Erscheinungsjahr (Neuester zuerst und ältester zuerst)
+  - Beste Bewertung
+  - Genre
 
-Später lernen wir, wie wir diese Datenbank nach unterschiedlichen Sachen sortieren können. Hebe deinen Code auf!
+## Bonus
 
-Inkl. CSS – responsiv natürlich :)
+- Bonus: Erstelle ein Feld, in dem man neue Filme hinzufügen kann.
+- Bonus: Erstelle eine Suchleiste, um nach Filmen zu suchen.
 
 ## 📸 Screenshots Aufgabe
 
