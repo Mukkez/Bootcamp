@@ -1,6 +1,7 @@
 import React from 'react';
 import CardItem from '../item/item';
 import MovieCardButton from '../btn/btn';
+import AddMovie from '../add-item/addItem';
 import { useState, useEffect } from 'react';
 
 const Card = (props) => {
@@ -66,8 +67,8 @@ const Card = (props) => {
 				<MovieCardButton buttonText="Best Rate" onClick={sortByBestRate} />
 				<MovieCardButton buttonText="A-Z" onClick={sortByAtoZ} />
 				<MovieCardButton buttonText="Z-A" onClick={sortByZtoA} />
+				<AddMovie />
 			</div>
-
 			<div class="flex flex-wrap justify-center">{cardSort}</div>
 		</div>
 	);
